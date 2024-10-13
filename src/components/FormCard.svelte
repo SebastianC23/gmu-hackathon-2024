@@ -1,10 +1,10 @@
 <script lang="ts">
   import { FormManager } from '../lib/FormManager.svelte.ts';
   import BtnRow from './BtnRow.svelte';
-  import AddSchools from './AddSchools.svelte';
-  import { onMount } from 'svelte';
 
   let formManager = new FormManager();
+
+  const schools = ['virginia tech', 'virginia commonwealth university'];
 </script>
 
 <div class="form">
@@ -16,7 +16,24 @@
   </div>
   <div class="content">
     {#if formManager.step === 0}
-      <AddSchools></AddSchools>
+      <h2>Select your School</h2>
+      <input
+        type="text"
+        bind:value={formManager.searchQuery}
+        placeholder="School Name"
+      />
+    {/if}
+    {#if formManager.step === 1}
+      <h2>Select your courses</h2>
+      <input
+        type="text"
+        bind:value={formManager.searchQuery}
+        placeholder="Major Name"
+      />
+    {/if}
+    {#if formManager.step === 2}
+      <h2>See your courses!</h2>
+      <p>I really is that simple</p>
     {/if}
   </div>
   <BtnRow {formManager}></BtnRow>
@@ -49,6 +66,10 @@
     flex: 1;
     padding: 1rem;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .arrow {
