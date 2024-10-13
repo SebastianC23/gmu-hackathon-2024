@@ -1,0 +1,38 @@
+---
+import 'normalize.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+  :root {
+    --color-primary: hsl(220, 60%, 25%);
+    --color-bg: hsl(220, 60%, 95%);
+    --color-secondary: hsl(220, 60%, 50%);
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+  }
+
+  :global(*) {
+    box-sizing: border-box;
+  }
+</style>

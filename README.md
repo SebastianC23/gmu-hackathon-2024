@@ -1,47 +1,23 @@
-# Astro Starter Kit: Minimal
+# What is Mason Virginia Transfers?
+It is a simple tool to search up if your college credits can be transferred to other colleges around Virginia.
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Inspiration
+we saw that there is no easy way to find out about transferable credits for all universities in one place. 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## What it does
+We made this tool to make it easy for students to search up if the courses they are currently taking can be transferred to other universities across Virginia
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## How we built it
+We used the frameworks of `Astro` with `Svelte` for the front-end, all the data is located in a folder with json files. We used `Puppeteer` for our web-scrapping method (we did that separately). We are also using `bun` instead of `nodejs` and `npm`
 
-## 🚀 Project Structure
+## Challenges we ran into
+Having to gather all the data for later use (going to each website and scrapping the courses)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Accomplishments that we're proud of
+We managed to create the scrapper for the GMU courses site.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## What we learned
+How to do proper web-scrapping with `puppeteer`
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## What's next for Mason Virgina Transfers
+We will all more schools to the database as well as creating a proper and more sophisticated backed database (with SQL).
