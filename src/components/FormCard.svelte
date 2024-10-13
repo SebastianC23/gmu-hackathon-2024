@@ -33,7 +33,7 @@
     {/if}
     {#if formManager.step === 2}
       <h2>See your courses!</h2>
-      <p>I really is that simple</p>
+      <p>It really is that simple</p>
     {/if}
   </div>
   <BtnRow {formManager}></BtnRow>
